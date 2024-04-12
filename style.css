@@ -5,6 +5,15 @@ body {
   color: rgb(211, 158, 14);
 }
 
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+
+/*Header*/
 header {
   display: flex;
   width: 100%;
@@ -50,6 +59,7 @@ h2 {
   font-weight: 600;
 }
 
+/*Section-Home-Title*/
 .presentation {
   width: 100%;
   display:flex;
@@ -65,7 +75,6 @@ h2 {
   background-color: rgba(18, 75, 131, 0.473);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.849);
 }
-
 
 .start img {
   width: 30%;
@@ -89,10 +98,9 @@ h3 {
 }
 
 h5 {
-  color:rgb(181, 184, 11) ;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .network {
@@ -104,10 +112,157 @@ h5 {
   list-style-type: none;
 }
 
+
+/*Section about me*/
+.aboutMe, .hobbies, .experience {
+  background-color: rgba(255, 228, 196, 0.356);
+} 
+
+.about-me, .hobbie-h4, .experience-h4 {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: rgb(24, 4, 70);
+}
+
+.about-h4 {
+  padding-top: 2%;
+}
+
+.about-p {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2%;
+  padding: 0 10% 4% 10%;
+}
+
+/*Section-Skills*/
+.skill-list, .hobbie-list, .training-list {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.skill-item, .hobbie-item {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-bottom: 1%;
+  }
+
+/*Section-Hobbies*/
+.box-hobbies, .box-experience {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: rgb(24, 4, 70);
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbie-title {
+  margin-bottom: -3%;
+}
+
+/*Section-Training*/
+.training-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-h6, .experience-h6 {
+  font-size: 1em;
+  margin-top: -8%;
+  justify-content: center;
+}
+
+.training-item img {
+  width: 250px;
+  height: 120px;
+  border: 2px solid #be9d0a;
+  border-radius: 5%;
+}
+
+/*Section-Experience*/
+.experience-list {
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.experience-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-project {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-info {
+  width: 40%;
+  color: rgb(24, 4, 70);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -6%;
+}
+
+.experience-project img {
+  width: 80%;
+  border: 2px solid rgb(24, 4, 70);
+  border-radius: 5%;
+}
+
+.repository-button {
+  padding: 15%;
+  border-radius: 10%;
+  color:wheat;
+  background-color: rgb(24, 4, 70);
+}
+
+
+/*footer*/
 footer {
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   gap: 2%;
+
 }
 
 footer img {
