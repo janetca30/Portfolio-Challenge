@@ -1,13 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(./images/landscape.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(211, 158, 14);
+  padding: 2% 0 2% 0;
 }
 
 h4 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 900;
   display: flex;
   justify-content: center;
@@ -17,18 +24,23 @@ h4 {
 header {
   display: flex;
   width: 100%;
-  height: 18%;
+  height: 20%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-bottom: 3%;
 }
 
 .name {
   display: flex;
-  width: 40%;
+  width: 35%;
   justify-content: space-evenly;
   align-items: center;
 } 
 
 nav {
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
 }
@@ -42,7 +54,6 @@ nav {
 .menu-item a {
   text-decoration: none;
   color: rgb(211, 158, 14);
-  
 }
 
 .menu-item {
@@ -52,10 +63,18 @@ nav {
   
 }
 
+.contact-email {
+  font-family: "Dancing Script", cursive;
+  color: #be9d0a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 h2 {
   color: rgb(211, 158, 14);
   font-family: "Dancing Script", cursive;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 
@@ -64,10 +83,11 @@ h2 {
   width: 100%;
   display:flex;
   justify-content: center;
+  margin-bottom: 3%;
 }
 
 .start {
-  width: 70%;
+  width: 80%;
   display: flex;
   border-radius: 48%;
   gap: 5%;
@@ -88,12 +108,13 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+  align-items: center;
 }
 
 h3 {
   color: rgb(158, 100, 25);
   font-family: "Dancing Script";
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -101,10 +122,12 @@ h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
+  margin-top: 5%;
 }
 
 .network {
   display: flex;
+  padding: 5%;
 }
 
 .network-item {
@@ -116,6 +139,7 @@ h5 {
 /*Section about me*/
 .aboutMe, .hobbies, .experience {
   background-color: rgba(255, 228, 196, 0.356);
+  margin-bottom: 3%;
 } 
 
 .about-me, .hobbie-h4, .experience-h4 {
@@ -123,10 +147,11 @@ h5 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   color: rgb(24, 4, 70);
+  margin-top: 3%;
 }
 
 .about-h4 {
-  padding-top: 2%;
+  padding: 2% 0 3% 0;
 }
 
 .about-p {
@@ -140,7 +165,7 @@ h5 {
 
 /*Section-Skills*/
 .skill-list, .hobbie-list, .training-list {
-  width: 90%;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   list-style-type: none;
@@ -150,6 +175,7 @@ h5 {
   justify-content: center;
   align-items: center;
   gap: 3%;
+  padding: 3%;
 }
 
 .skill-item, .hobbie-item {
@@ -173,10 +199,6 @@ h5 {
   flex-direction: column;
 }
 
-.hobbie-title {
-  margin-bottom: -3%;
-}
-
 /*Section-Training*/
 .training-item {
   display: flex;
@@ -185,12 +207,14 @@ h5 {
   align-content: center;
   justify-content: center;
   align-items: center;
+  padding: 2%;
 }
 
 .training-h6, .experience-h6 {
-  font-size: 1em;
-  margin-top: -8%;
+  font-size: 1rem;
+  display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .training-item img {
@@ -201,37 +225,50 @@ h5 {
 }
 
 /*Section-Experience*/
+.experience-title {
+  margin-bottom: 3%;
+}
+
 .experience-list {
-  width: 90%;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  
 }
 
-.experience-item {
-  width: 100%;
+.experience-item, .experience-item-par {
+  width: 85%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2%;
 }
 
-.experience-project {
-  width: 60%;
+.experience-item-par{
+  flex-direction: row-reverse;
+}
+
+.experience-project, .experience-project-par {
+  width: 70%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.experience-project-par {
+  justify-content: flex-end;
 }
 
 .experience-info {
-  width: 40%;
+  width: 30%;
   color: rgb(24, 4, 70);
   display: flex;
   flex-direction: column;
@@ -239,32 +276,268 @@ h5 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: -6%;
 }
 
-.experience-project img {
+.experience-project img , .experience-project-par img {
   width: 80%;
   border: 2px solid rgb(24, 4, 70);
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
-.repository-button {
-  padding: 15%;
+.experience-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.repository-button, .demo-button {
+  width: 100px;
+  height: 30px;
   border-radius: 10%;
   color:wheat;
   background-color: rgb(24, 4, 70);
 }
 
+/*Section-Contact*/
+.contact-title {
+  margin-bottom: 3%;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+  
+}
+
+.contact-text {
+  width: 80%;
+  
+}
+
+.contact-p, .contact-span, .form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+} 
+
+.form-info {
+  width: 77%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  font-size: 0.7em;
+  margin-bottom: 10%;
+}
+
+.form-input {
+  border: none;
+  padding: 1%;
+}
+
+textarea, .form-affair {
+  margin-bottom: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+}
+
+.submit-form {
+  color: aliceblue;
+  background-color: #be9d0a;
+  padding: 2%;
+  border: none;
+  width: 25%;
+}
 
 /*footer*/
 footer {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   justify-content: center;
-  gap: 2%;
-
+  align-items: center;
 }
 
 footer img {
   background-color: rgba(212, 184, 21, 0.849);
+}
+
+
+/*Responsive-Tablet*/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  /*Header*/
+  header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  /*Section-Home-Title*/
+  .start {
+    width: 100%;
+  }
+
+  .network-item {
+    width: 120px;
+  }
+
+  /*Section-Experience*/
+  .experience-project-par, .experience-project {
+    width: 60%;
+  }
+  
+  .experience-info {
+    width: 40%;
+  }
+
+  /*Section-Contact*/
+  .contact-image img {
+    width: 80%
+  }
+
+  .contact-text {
+    margin-bottom: 1%;
+  }
+}
+
+/*Responsive-Mobile*/
+
+@media only screen and (max-width: 599.99px) {
+  /*Header*/
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+
+  .name {
+    width: 70%;
+    font-size: 0.6rem;
+  }
+
+  .email {
+    width: 30%;
+  }
+
+  nav {
+    display: none;
+  }
+  
+  /*Section-Home-Title*/
+  .start {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .text {
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .network-item img {
+    margin-left: 30%;
+  }
+
+  /*Section-Experience*/
+  .experience-item, .experience-item-par {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience-project, .experience-project-par {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-info {
+    width: 80%;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .experience-text, .experience-h6, .experience-h5  {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .experience-button {
+    margin-top: 2%;
+    justify-content: flex-start;
+  }
+
+  /*Section-Contact*/
+  .contact-image{
+    display: none;
+  }
+
+  .contact-info {
+    width: 100%;
+  }
 }
